@@ -10,6 +10,6 @@
   ],
   
   "background": {
-    "service_worker": ["translator.js"]
+    "service_worker": "translator.js"
   }
 }
