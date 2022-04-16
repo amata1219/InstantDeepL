@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Instant DeepL",
+  "version": "1.0.0",
+  
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "tabs"
+  ],
+  
+  "background": {
+    "scripts": ["translator.js"],
+    "persistent": false
+  }
+}
