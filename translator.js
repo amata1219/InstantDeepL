@@ -1,7 +1,7 @@
 const MENU_ID = 'TRANSLATED_AT_DEEPL';
 
 function onClick(info, tab) {
-  if (suffix != MENU_ID) return;
+  if (info.menuItemId != MENU_ID) return;
   
   const url = 'https://www.deepl.com/translator#en/ja/' + info.selectionText;
   const encoded = encodeURI(url);
