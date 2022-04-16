@@ -10,7 +10,6 @@
   ],
   
   "background": {
-    "service_worker": ["translator.js"],
-    "persistent": false
+    "service_worker": ["translator.js"]
   }
 }
