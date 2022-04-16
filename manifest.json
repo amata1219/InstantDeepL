@@ -10,7 +10,7 @@
   ],
   
   "background": {
-    "scripts": ["translator.js"],
+    "service_worker": ["translator.js"],
     "persistent": false
   }
 }
