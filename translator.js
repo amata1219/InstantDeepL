@@ -3,11 +3,11 @@ const MENU_ID = 'TRANSLATED_AT_DEEPL';
 function onClick(info, tab) {
   if (info.menuItemId != MENU_ID) return;
   
-  const url = 'https://www.deepl.com/translator#en/ja/' + info.selectionText;
-  const encoded = encodeURI(url);
+  const encoded = encodeURIComponent(info.selectionText.replace('/', '\\/'));
+  const url = 'https://www.deepl.com/translator#en/ja/' + encoded;
   
   chrome.tabs.create({
-    url: encoded
+    url: url
   });
 }
 
